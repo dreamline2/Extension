@@ -1,0 +1,28 @@
+{    
+    "manifest_version": 2,
+    "name": "小白的擴充套件",
+    "version": "1.0.0",
+    "description": "顯示小白文章和 Podcast 通知",
+    "icons": {
+        "16": "icon2.png",
+        "48": "icon2.png",
+        "128": "icon2.png"
+    },
+    "browser_action": {
+        "deflaut_icon": "icon2.png",
+        "deflaut_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.google.com.tw/*"
+            ],
+            "js": [
+                "execute.js"
+            ]
+        }
+    ]
+}
