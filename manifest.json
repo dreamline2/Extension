@@ -9,8 +9,8 @@
         "128": "icon2.png"
     },
     "browser_action": {
-        "deflaut_icon": "icon2.png",
-        "deflaut_popup": "popup.html"
+        "default_icon": "icon2.png",
+        "default_popup": "popup.html"
     },
     "permissions": [
         "activeTab"
